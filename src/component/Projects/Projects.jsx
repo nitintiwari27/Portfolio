@@ -4,10 +4,41 @@ import SaaSnotes from "../../assets/SaaSnotes.png";
 import productShowcase from "../../assets/product-showcase.png";
 import homebazaar from "../../assets/homebazaar.png";
 import MYTask from "../../assets/MY-Task.png";
+import smartnotesx from "../../assets/smartnotesx.png";
+
 const Projects = ({ selectedProject, setSelectedProject }) => {
   const projects = [
     {
       id: 1,
+      title: "SmartNotesX",
+      img: smartnotesx,
+      liveDemo: "https://smartnotesx.vercel.app/",
+      sourceCode: "https://github.com/nitintiwari27/SmartNotesX-Frontend",
+      overview: `SmartNotesX is a full-stack MERN web application that I built to help students securely manage study notes and explore job and internship opportunities. The platform allows multiple users to register and log in with secure JWT-based authentication.
+
+Users can upload, view, bookmark, and manage their notes, while an Admin-only dashboard enables administrators to post job and internship opportunities. Regular users can browse and apply for these opportunities through a protected workflow.
+
+The application uses role-based access control to restrict sensitive actions, ensuring that only admins can manage jobs and internships. SmartNotesX is fully deployed with the backend hosted on Render and the frontend on Vercel, providing a scalable, secure, and production-ready experience.`,
+      techStack: [
+        "Frontend: React.js, Tailwind CSS",
+        "Backend: Node.js, Express.js",
+        "Database: MongoDB",
+        "Authentication: JWT",
+        "Deployment: Render, Vercel",
+      ],
+      features: [
+        "User authentication with secure login and registration",
+        "Notes upload and management system (CRUD)",
+        "Admin-only job and internship posting module",
+        "User application flow for jobs and internships",
+        "JWT-based role-based access control",
+        "Protected routes and secure REST APIs",
+        "Responsive and user-friendly interface",
+      ],
+    },
+
+    {
+      id: 2,
       title: "SaaS Notes",
       img: SaaSnotes,
       liveDemo: "https://saas-notes-frontend-xi.vercel.app/",
@@ -31,7 +62,7 @@ The platform is fully deployed — backend on Render and frontend on Vercel — 
       ],
     },
     {
-      id: 2,
+      id: 3,
       title: "Product Showcase Explorer",
       img: productShowcase,
       liveDemo: "https://viewmyproducts.vercel.app/",
@@ -52,7 +83,7 @@ The app includes category-based filtering, pagination, and a clean product detai
       ],
     },
     {
-      id: 3,
+      id: 4,
       title: "HomeBazaar",
       img: homebazaar,
       liveDemo: "https://homebazaar-n8us.onrender.com/",
@@ -76,7 +107,7 @@ Visitors can also rate and review properties to assist others in making better d
       ],
     },
     {
-      id: 4,
+      id: 5,
       title: "Voice Enabled To-Do List",
       img: MYTask,
       liveDemo: "https://task-list-ebon-iota.vercel.app/",
